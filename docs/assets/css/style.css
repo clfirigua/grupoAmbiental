@@ -971,4 +971,12 @@ span.feature-review {margin-left: 10px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+
+.feature-content img {
+    width: 100%;
+    height: 200px; /* Puedes ajustar esta altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+    border-radius: 8px; /* Opción adicional para esquinas redondeadas */
+  }
+  
 /*========================Thank you=================

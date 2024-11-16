@@ -8,7 +8,7 @@ document.getElementById('pqrForm').addEventListener('submit', async function (ev
     const message = document.getElementById('message').value;
 
     // Aquí usamos Formspree para enviar el correo
-    const response = await fetch('https://formspree.io/f/xrbgknjj', {
+    const response = await fetch('https://formspree.io/f/myzyjrqk', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

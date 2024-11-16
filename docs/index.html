@@ -197,7 +197,7 @@
                     </button>
                     <!-- Logo y Nombre de la Empresa -->
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" alt="Logo" class="logo-img"> <!-- Reemplaza 'logo.png' con la ruta de tu logo -->
+                        <img src="assets/logo/logo-empresa.png" alt="Logo" class="logo-img"> <!-- Reemplaza 'logo.png' con la ruta de tu logo -->
                         <span class="company-name">Grupo Ambiental</span>
                     </a>
                 </div><!--/.navbar-header-->
@@ -209,6 +209,7 @@
                         <li class="scroll"><a href="#mission-vision-values">Nosotros</a></li>
                         <li class="scroll"><a href="#objetivos">Objetivos</a></li>
                         <li class="scroll"><a href="#blog">Blog</a></li>
+                        <li class="scroll"><a href="#pqr">PQRD</a></li>
                         <li class="scroll"><a href="#footer">Contacto</a></li>
                     </ul><!--/.nav -->
                 </div><!-- /.navbar-collapse -->
@@ -472,6 +473,72 @@
 
 
 
+		<section id="pqr" class="pqr-section">
+			<div class="container">
+				<div class="row align-items-center">
+
+					<div class="section-header">
+						<h2>Radicar PQR</h2>
+					</div><!--/.section-header-->
+					<br>
+					<br>
+					<!-- Formulario (50% ancho) -->
+					<div class="col-lg-12 col-md-12">
+						<div class="form-container">
+							<!-- <h2>Radicar PQR</h2> -->
+							<form id="pqrForm">
+								<label for="name">Nombre:</label>
+								<input type="text" id="name" name="name" placeholder="Tu nombre" required>
+		
+								<label for="email">Correo Electrónico:</label>
+								<input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+		
+								<label for="type">Tipo de solicitud:</label>
+								<select id="type" name="type" required>
+									<option value="">Selecciona una opción</option>
+									<option value="Petición">Petición</option>
+									<option value="Queja">Queja</option>
+									<option value="Reclamo">Reclamo</option>
+									<option value="Denuncia">Denuncia</option>
+								</select>
+		
+								<label for="message">Mensaje:</label>
+								<textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+		
+								<button type="submit">Enviar PQR</button>
+							</form>
+							<p id="responseMessage"></p>
+						</div>
+					</div>
+		
+
+				</div>
+			</div>
+		</section>
+
+
+		<section id="location" class="location-section">
+			<div class="container-fluid">
+				<div class="map-container">
+					<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7002149472594!2d-72.39932648466372!3d5.337029436004695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a281827efc0b9%3A0x3f864b1234bb01d8!2sYopal%2C%20Casanare%2C%20Colombia!5e0!3m2!1ses!2sco!4v1700167274853!5m2!1ses!2sco"
+					width="100%"
+					height="450"
+					style="border:0;"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade">
+				  </iframe>
+				</div>
+			</div>
+		</section>
+		
+
+
+
+
+
+
 
 		<!--footer start-->
 		<footer id="footer"  class="footer">
@@ -520,6 +587,9 @@
 
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+
+		<script src="./js/pqr.js"></script>
+
 
     </body>
 
